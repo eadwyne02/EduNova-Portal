@@ -204,13 +204,9 @@ export default function Login() {
               Sign In
             </button>
           </form>
-
-          <p className='text-center text-sm text-black/50 mt-8'>
-            Don't have an account?{' '}
-            <Link to='/apply' className='text-[#1E3A8A] font-medium hover:underline'>
-              Apply to EduNova
-            </Link>
-          </p>
+        </div>
+        <div>
+          <div>Undergraduate</div>
         </div>
       </div>
     </div>
