@@ -43,24 +43,16 @@ export default function Dashboard() {
         <div className="flex-1" >
             <Header />
           <div className='px-4 md:px-8 py-6 max-w-6xl mx-auto flex flex-col gap-6'>
-          {/* Profile hero */}
           <div className='relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0B1524] via-[#14263F] to-[#1E3A8A]'>
-            {/* decorative glow */}
             <div className='absolute -top-24 -right-24 w-64 h-64 bg-[#B8901F]/20 rounded-full blur-3xl' />
             <div className='absolute -bottom-24 -left-24 w-64 h-64 bg-[#1E3A8A]/30 rounded-full blur-3xl' />
-
             <div className='relative px-6 md:px-8 py-8 flex flex-col sm:flex-row sm:items-center gap-6'>
               <div className='relative flex-shrink-0'>
-                <img
-                  src={ed}
-                  alt="Edwin Adeyi-Samuel"
-                  className='w-24 h-24 md:w-28 md:h-28 rounded-2xl object-cover ring-4 ring-white/10'
-                />
+                <img src={ed} alt="Edwin Adeyi-Samuel" className='w-24 h-24 md:w-28 md:h-28 rounded-2xl object-cover ring-4 ring-white/10'/>
                 <span className='absolute -bottom-2 -right-2 bg-green-500 text-white text-[10px] font-semibold px-2 py-1 rounded-full border-2 border-[#14263F]'>
                   Active
                 </span>
               </div>
-
               <div className='flex-1'>
                 <p className='font-mono text-xs tracking-[0.2em] uppercase text-[#B8901F] mb-1'>
                   2026/2027 · First Semester
@@ -69,7 +61,6 @@ export default function Dashboard() {
                   Edwin Adeyi-Samuel
                 </h1>
                 <p className='font-mono text-white/50 text-sm mt-1'>EDU/2026/UG/001245</p>
-
                 <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5 pt-5 border-t border-white/10'>
                   {studentInfo.map((item, index) => (
                     <div key={index}>
