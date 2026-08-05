@@ -20,7 +20,7 @@ export default function Header() {
       <div className="lg:flex w-full">
       <header className="bg-[#14263F] flex items-center justify-between px-6 py-4 w-full">
         <div className="flex items-center gap-4">
-            <button onClick={() => setShowSidebar(true)} aria-label="Open menu" aria-expanded={showSidebar} className="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">
+            <button onClick={() => setShowSidebar(true)} aria-label="Open menu" aria-expanded={showSidebar} className="text-white/70 lg:hidden hover:text-white transition-colors duration-200 cursor-pointer">
               <Menu size={24} strokeWidth={1.75} />
             </button>
             <div>

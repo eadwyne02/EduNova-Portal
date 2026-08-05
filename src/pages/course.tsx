@@ -1,5 +1,7 @@
 import { useState, useMemo } from "react"
 import { Search, ChevronDown, X, BookOpen, Layers, CheckSquare, ListChecks, Printer, Download, FileText, User, CalendarClock, MapPin, ShieldCheck, Clock,} from "lucide-react"
+import Sidebar from "../components/sidebar"
+import Header from "../components/header"
 const courses = [
   { code: "MEE401", title: "Machine Design II", units: 3, lecturer: "Dr. Michael Johnson", type: "Core", status: "Registered", department: "Mechanical Engineering", schedule: "Monday & Wednesday, 8:00 AM – 10:00 AM", venue: "Engineering Block A, Room 203", prerequisites: "MEE301",},
   { code: "MEE403", title: "Heat Transfer", units: 3, lecturer: "Prof. A. Bello", type: "Core", status: "Registered", department: "Mechanical Engineering", schedule: "Tuesday & Thursday, 10:00 AM – 12:00 PM", venue: "Engineering Block A, Room 108", prerequisites: "MEE302",},
@@ -61,7 +63,14 @@ export default function Course() {
   }, [search])
 
   return (
-    <div className="bg-[#F6F6F2] min-h-screen">
+    <div className="flex">
+      <aside className="hidden lg:block w-72">
+          <div className="sticky top-0 h-screen">
+            <Sidebar />
+          </div>
+        </aside>
+      <div className="bg-[#F6F6F2] min-h-screen flex-1">
+        <Header />
       <div className="px-4 md:px-8 py-8 max-w-6xl mx-auto flex flex-col gap-6">
         <div>
           <span className="font-mono text-xs tracking-[0.2em] uppercase text-black/40">
@@ -274,6 +283,7 @@ export default function Course() {
           </div>
         </div>
       )}
+    </div>
     </div>
   )
 }
