@@ -91,10 +91,10 @@ export default function Results() {
     <div className="bg-[#F6F6F2] min-h-screen">
       <div className="flex">
         <aside className="hidden lg:block w-72">
-                    <div className="sticky top-0 h-screen">
-                      <Sidebar />
-                    </div>
-                  </aside>
+          <div className="sticky top-0 h-screen">
+            <Sidebar />
+          </div>
+        </aside>
         <div className="flex-1">
           <Header />
           <div className="px-4 md:px-8 py-8 max-w-5xl mx-auto flex flex-col gap-6">
