@@ -111,7 +111,7 @@ export default function Course() {
             <FilterDropdown label="Level" options={["300 Level", "400 Level"]} />
           </div>
         </div>
-        <div className="bg-white rounded-2xl border border-black/5 overflow-hidden">
+        <div className="bg-white rounded-2xl border border-black/5 min-w-0">
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
