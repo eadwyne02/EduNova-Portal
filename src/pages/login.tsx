@@ -44,7 +44,7 @@ const registrationTypes = [
     path: '/register/certificates',
   },
 ]
-function IdInput({ value, onChange, error, onBlur }: { value: string; onChange: (val: string) => void; error?: string; onBlur?: (val: string) => void }) {
+function IdInput({ onChange, error, onBlur }: { value: string; onChange: (val: string) => void; error?: string; onBlur?: (val: string) => void }) {
   const [role, setRole] = useState<'student' | 'staff'>('student')
   const [type, setType] = useState(studentTypes[0].code)
   const [typeOpen, setTypeOpen] = useState(false)
